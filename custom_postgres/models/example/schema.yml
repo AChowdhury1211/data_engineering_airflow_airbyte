@@ -1,0 +1,81 @@
+version: 2
+
+models:
+  - name: films
+    description: "All the films"
+    columns:
+      - name: film_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: title
+        description: "The primary key for this table"
+        tests:
+          - not_null
+      - name: release_date
+        description: "The primary key for this table"
+        tests:
+          - not_null
+      - name: price
+        description: "The primary key for this table"
+        tests:
+          - not_null
+      - name: rating
+        description: "The primary key for this table"
+        tests:
+          - not_null
+      - name: user_rating
+        description: "The primary key for this table"
+        tests:
+          - not_null
+
+  - name: actors
+    description: "All the starred actor's names"
+    columns:
+      - name: actor_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: name
+        description: "The primary key for this table"
+        tests:
+          - not_null
+
+  - name: film_ratings
+    description: "All the film_ratings"
+    columns:
+      - name: film_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: title
+        description: "The primary key for this table"
+        tests:
+          - not_null
+      - name: release_date
+        description: "The primary key for this table"
+        tests:
+          - not_null
+      - name: price
+        description: "The primary key for this table"
+        tests:
+          - not_null
+      - name: rating
+        description: "The primary key for this table"
+        tests:
+          - not_null
+      - name: user_rating
+        description: "The primary key for this table"
+        tests:
+          - not_null
+      - name: actor_count
+        description: "The primary key for this table"
+        tests:
+          - not_null
+      - name: avg_actor_rating
+        description: "The primary key for this table"
+        tests:
+          - not_null

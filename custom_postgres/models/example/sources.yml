@@ -1,0 +1,13 @@
+version: 2
+sources:
+  - name: destination_db
+    description: "Raw data from destination_db"
+    database: destination_db
+    schema: public
+    tables:
+      - name: films
+        description: "all films"
+      - name: film_actors
+        description: "mapping b/w films and actors"
+      - name: actors
+        description: "all actors"
